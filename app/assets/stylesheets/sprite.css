@@ -1,8 +1,8 @@
 [class^="icons-"], [class*=" icons-"] {
-    background-image: url("../images/sprite-icons.png"); background-repeat: no-repeat; display: inline-block;height: auto;vertical-align: text-top;width: auto;
+    background-image: url("../assets/sprite-icons.png"); background-repeat: no-repeat; display: inline-block;height: auto;vertical-align: text-top;width: auto;
 }
 .icon-sprite, .nav > .active > a > [class^="icons-"], .nav > .active > a > [class*=" icons-"], .dropdown-menu > li > a:hover > [class^="icons-"], .dropdown-menu > li > a:hover > [class*=" icons-"], .dropdown-menu > .active > a > [class^="icons-"], .dropdown-menu > .active > a > [class*=" icons-"] {
-    background-image: url("../images/sprite-icons.png");
+    background-image: url("../assets/sprite-icons.png");
 }
 .icons-down-arrow {
     background-position: -3px 0px;
@@ -45,10 +45,10 @@
     width: 207px;
 }
 [class^="icons-social-"], [class*=" icons-social-"] {
-    background-image: url("../images/social-sprite-icons.png"); background-repeat: no-repeat; display: inline-block;height: auto;vertical-align: text-top;width: auto;
+    background-image: url("../assets/social-sprite-icons.png"); background-repeat: no-repeat; display: inline-block;height: auto;vertical-align: text-top;width: auto;
 }
 .icon-sprite, .nav > .active > a > [class^="icons-social-"], .nav > .active > a > [class*=" icons-social-"], .dropdown-menu > li > a:hover > [class^="icons-social-"], .dropdown-menu > li > a:hover > [class*=" icons-social-"], .dropdown-menu > .active > a > [class^="icons-social-"], .dropdown-menu > .active > a > [class*=" icons-social-"] {
-    background-image: url("../images/social-sprite-icons.png");
+    background-image: url("../assets/social-sprite-icons.png");
 }
 .icons-social-facebook {
     background-position: 0px 0px;
@@ -81,4 +81,9 @@
 }
 .icons-social-linkedin:hover {
     opacity: 0.9;
+}
+.mine-image{
+   background-position: 0px 0px;
+    height: 500px;
+    width: 600px;
 }
