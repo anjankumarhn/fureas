@@ -5,10 +5,17 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render :partial => "layouts/header" %>
+  <%= yield %>
+  <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+    <%= render :partial => "sessions/new" %>
+  </div>
+  <div class="modal fade" id="myModal1" tabindex="-1" aria-hidden="true">
+    <%= render :partial => "welcome/new" %>
+  </div>
+  <%= render :partial => "layouts/footer" %>
 </body>
 </html>

@@ -19,7 +19,7 @@ body {
 .navbar-nav > .active > a {
     border-bottom: 3px solid #ea6060;margin: 30px 25px 25px 25px;
 }
-.btn { 
+.btn {
     text-transform: uppercase;
     font-family: "Roboto";
     border-radius: 3px;
@@ -71,7 +71,7 @@ h1 {
 
 
 .close {
-    opacity: 1;    
+    opacity: 1;
 }
 .btn:focus,
 .btn:active:focus,
@@ -81,4 +81,6 @@ h1 {
 .nav > li > a:hover, .nav > li > a:focus {
     background-color: #fff;
 }
-
+.img-responsive{
+  max-height: 150px;
+}
