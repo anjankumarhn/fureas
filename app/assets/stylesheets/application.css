@@ -10,6 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require bootstrap
+ *= require fureas-style
+ *= require button
+ *= require cards
+ *= require custom-modal
+ *= require override-bootstrap-responsive
+ *= require override-bootstrap
+ *= require sprite
  *= require_tree .
  *= require_self
  */

@@ -1,0 +1,84 @@
+[class^="icons-"], [class*=" icons-"] {
+    background-image: url("../images/sprite-icons.png"); background-repeat: no-repeat; display: inline-block;height: auto;vertical-align: text-top;width: auto;
+}
+.icon-sprite, .nav > .active > a > [class^="icons-"], .nav > .active > a > [class*=" icons-"], .dropdown-menu > li > a:hover > [class^="icons-"], .dropdown-menu > li > a:hover > [class*=" icons-"], .dropdown-menu > .active > a > [class^="icons-"], .dropdown-menu > .active > a > [class*=" icons-"] {
+    background-image: url("../images/sprite-icons.png");
+}
+.icons-down-arrow {
+    background-position: -3px 0px;
+    height: 10px;
+    width: 10px;
+}
+.icons-search {
+    background-position: -65px 0px;
+    height: 30px;
+    width: 30px;
+}
+.icons-location-pointer-small {
+    background-position: -16px 0px;
+    height: 20px;
+    width: 20px;
+}
+.icons-location-pointer-large {
+    background-position: -35px -1px;
+    height: 25px;
+    width: 25px;
+}
+.icons-calendar {
+    background-position: -96px 0px;
+    height: 28px;
+    width: 28px;
+}
+.icons-plus-with-circle {
+    background-position: -127px 0px;
+    height: 35px;
+    width: 35px;
+}
+.icons-close-with-circle {
+    background-position: -164px -1px;
+    height: 30px;
+    width: 30px;
+}
+.icons-modal-logo {
+    background-position: -3px -38px;
+    height: 60px;
+    width: 207px;
+}
+[class^="icons-social-"], [class*=" icons-social-"] {
+    background-image: url("../images/social-sprite-icons.png"); background-repeat: no-repeat; display: inline-block;height: auto;vertical-align: text-top;width: auto;
+}
+.icon-sprite, .nav > .active > a > [class^="icons-social-"], .nav > .active > a > [class*=" icons-social-"], .dropdown-menu > li > a:hover > [class^="icons-social-"], .dropdown-menu > li > a:hover > [class*=" icons-social-"], .dropdown-menu > .active > a > [class^="icons-social-"], .dropdown-menu > .active > a > [class*=" icons-social-"] {
+    background-image: url("../images/social-sprite-icons.png");
+}
+.icons-social-facebook {
+    background-position: 0px 0px;
+    height: 128px;
+    width: 128px;
+}
+.icons-social-facebook:hover {
+    opacity: 0.9;
+}
+.icons-social-gplus {
+    background-position: -128px 0px;
+    height: 128px;
+    width: 128px;
+}
+.icons-social-gplus:hover {
+    opacity: 0.9;
+}
+.icons-social-twitter {
+    background-position: -259px 0px;
+    height: 128px;
+    width: 128px;
+}
+.icons-social-twitter:hover {
+    opacity: 0.9;
+}
+.icons-social-linkedin {
+    background-position: -389px 0px;
+    height: 128px;
+    width: 128px;
+}
+.icons-social-linkedin:hover {
+    opacity: 0.9;
+}
