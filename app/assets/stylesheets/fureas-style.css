@@ -7,6 +7,9 @@
 .logo-padding {
     padding: 12px;
 }
+.logo-size{
+  width:150px;
+}
 .footer-labels {
     text-align: center;margin-bottom: 40px;
 }
@@ -100,7 +103,7 @@
     font-family: "Signika"; color: rgb( 86, 93, 103 );font-weight: 600;
 }
 .event-blocks .event-details .location {
-    font-size: 12px; font-family: "Signika"; color: rgb( 86, 93, 103 );line-height: 1.125;margin-top: 5px; line-height: 25px; 
+    font-size: 12px; font-family: "Signika"; color: rgb( 86, 93, 103 );line-height: 1.125;margin-top: 5px; line-height: 25px;
     vertical-align: middle; padding-top: 5px;color: rgb(234, 96, 96);text-transform: uppercase;
 }
 .event-blocks .event-details .colarado {
