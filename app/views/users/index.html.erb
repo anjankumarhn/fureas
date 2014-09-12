@@ -1,0 +1,37 @@
+<div class="access">
+
+<div class="about">
+  <h3 class="f1">FUREAS <br> Forum of united resoursces for engineers and scholars.Which is invented to innovate, collabarate and to share ideas.This community basicalyy the gang that can help people to solve the problems in any kind of platforms. </h3></div>
+
+<div>
+  <h1 class="f2">Hi guys please enter your details here</h1>
+
+  <h3 class="access-word"> Click the below butoon to create your deatils</h3>
+
+ <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">Create Details</button>
+
+ <table class="table table-bordered">
+  <tr>
+    <th>Name</th>
+    <th>E-mail</th>
+    <th> Modify </th>
+
+  </tr>
+
+
+    <tr>
+      <% @users.each do |user| %>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td>
+
+      <%= link_to 'Edit', edit_user_path(user) %>|
+        <%= link_to 'Delete', user_path(user), data: { confirm: 'Are you sure?' },:method => :delete %>
+
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+</div>
+</div>

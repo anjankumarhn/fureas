@@ -1,0 +1,37 @@
+<div class="modal-dialog sign-up-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close modal-close-btn" data-dismiss="modal">
+                            <span aria-hidden="true" class="icons-close-with-circle"></span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title"><span class="icons-modal-logo"> </span></h4>
+                    </div>
+                    <div class="modal-body text-center">
+
+
+
+<div class="form-align">
+<%= form_for :user, :url => users_path, :method =>'post' do |f| %>
+
+<div class="form-group">
+  <%= f.text_field :name, :id=>"name",:class=>"form-control", :placeholder=>" Name"%>
+      <label class="error" id="label_error" for="name"> </label>
+
+
+      <%= f.text_field :email, :id=>"email",:class=>"form-control", :placeholder=>"E-mail"%>
+       <label class="error" id="label_error" for="email"> </label>
+
+
+
+      <div class="col-6 col-sm-offset-0">
+      <%= f.submit "CREATE DETAILS", :class=>"btn btn-danger" %>
+
+      </div>
+    </div>
+  <% end %>
+  </div>
+  <div class="signingup">By signing up, you agree to our <a href="">Terms of Service </a> </div>
+                    </div>
+                </div>
+            </div>

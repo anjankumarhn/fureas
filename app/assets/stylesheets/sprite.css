@@ -87,3 +87,35 @@
     height: 500px;
     width: 600px;
 }
+.about{
+  background: url("bg1.jpg");
+  min-height: 100px;
+}
+.form-align{
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+.btn-danger{
+  margin-top: 45px;
+}
+.access{
+  min-height: 500px;
+}
+.access-word{
+  color:red;
+  text-align: center;
+}
+.f1{
+  padding-top: 10px;
+}
+.f2{
+  margin-top: 50px;
+  text-align: center;
+  color: green;
+}
+.btn-success{
+  margin-top: 50px;
+  margin-left: 600px;
+  margin-bottom: 50px;
+}

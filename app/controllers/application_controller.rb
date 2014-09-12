@@ -9,5 +9,13 @@ class ApplicationController < ActionController::Base
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    rescue ActiveRecord::RecordNotFound
   end
+
+  def require_login
+    unless session[:user_id]
+      session[:request_redirect_url] = request.original_url
+            redirect_to sessions_path # halts request cycle
+     end
+   end
 end
