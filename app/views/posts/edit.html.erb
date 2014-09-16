@@ -1,0 +1,16 @@
+<div class="ggg">
+
+
+<div class="post">
+  <%= form_tag post_path(@post), :method =>:patch do %>
+
+
+<%= text_area_tag :comment, params[:comment], :class =>"comment-box",:class=>"form-control", :placeholder=>"Comment Here"%>
+      <br />
+          <%= submit_tag "EDIT COMMENT", :class=>"btn btn-success", :id => "post-button" %>
+
+          <% end %>
+
+
+</div>
+</div>

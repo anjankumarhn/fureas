@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
 
   def require_login
     unless session[:user_id]
-      session[:request_redirect_url] = request.original_url
+       flash[:error] = "You must be logged in to access this section"
             redirect_to sessions_path # halts request cycle
      end
    end

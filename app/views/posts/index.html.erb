@@ -1,0 +1,27 @@
+
+<div class="ggg">
+<div class="post-box">
+<div class="kkk">
+  <% @posts.each do |post| %>
+  <div class="row">
+    <div class="col-md-2"><strong><%= post.name %></strong><br />
+      <img src="/assets/overlay.png" ></div>
+    <div class="col-md-7">
+      <p class="post-date"><%= post.created_at.strftime("%m/%d/%Y-%H:%M:%S%P") %></p>
+      <%= post.comment %></div>
+    <div class="col-md-3">
+     <p class="post-mod"><%= link_to 'Edit post', edit_post_path(:id => post.id) %> | <%= link_to 'Delete post', post_path(:id => post.id), :method =>"delete" %></p>
+    </div>
+  </div>
+  <hr>
+  <% end %>
+</div>
+</div>
+<div class="post">
+  <%= form_tag posts_path, :method =>:post do %>
+<%= text_area_tag :comment, params[:comment], :class =>"comment-box",:class=>"form-control", :placeholder=>"Comment Here"%>
+      <br />
+          <%= submit_tag "POST COMMENT", :class=>"btn btn-danger", :id => "post-button" %>
+<% end %>
+</div>
+</div>

@@ -18,6 +18,7 @@
  *= require override-bootstrap-responsive
  *= require override-bootstrap
  *= require sprite
+ *= require post
  *= require_tree .
  *= require_self
  */
