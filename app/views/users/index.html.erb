@@ -9,29 +9,37 @@
   <h3 class="access-word"> Click the below butoon to create your deatils</h3>
 
  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">Create Details</button>
+ </div>
 
- <table class="table table-bordered">
-  <tr>
-    <th>Name</th>
-    <th>E-mail</th>
-    <th> Modify </th>
+         <h1 class ="family"> Fureas Family </h1>
+         <div class="family-members">
+ <div class="row">
 
-  </tr>
+  <% @users.each do |u| %>
+<div class="col-md-3">
+  <div class="image-content">
+  <% if u.image? %>
+ <%= image_tag u.image, :class =>"image-style img-circle" %>
+ <% else %>
+ <img src="assets/overlay.png" class="image-style img-circle" />
+ <% end %>
 
+<h4 class="image-name"><%= u.name %></h4>
+ <span class="image-name text-muted"><%= u.state %></span>
+ <hr>
 
-    <tr>
-      <% @users.each do |user| %>
-      <td><%= user.name %></td>
-      <td><%= user.email %></td>
-      <td>
-
-      <%= link_to 'Edit', edit_user_path(user) %>|
-        <%= link_to 'Delete', user_path(user), data: { confirm: 'Are you sure?' },:method => :delete %>
-
-      </td>
-    </tr>
-  <% end %>
-</table>
+ </div>
+</div>
+ <% end %>
+</div>
 
 </div>
 </div>
+
+
+
+
+
+
+
+

@@ -15,6 +15,8 @@
 //= require jquery.slimscroll
 //= require jquery.slimscroll.min
 //= require bootstrap
+//= require comment
 //= require home
+//= require banner
 //= require turbolinks
 //= require_tree .

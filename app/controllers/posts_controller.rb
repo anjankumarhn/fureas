@@ -15,10 +15,11 @@ class PostsController < ApplicationController
     @post = Post.new(:comment => params[:comment])
     @post.user_id = current_user.id
     @post.name = current_user.name
+     c = @post.name
 
     if @post.save
       redirect_to posts_path
-      flash[:notice] = "Passed to post comment!"
+      flash[:notice] = " " + @post.name + " " + " commented Successfully"
     else
       redirect_to posts_path
       flash[:notice] = "Failed to post comment!"
@@ -60,5 +61,8 @@ class PostsController < ApplicationController
       redirect_to posts_path
       flash[:notice] = "May be you are not a authorizable to delete this!"
     end
+  end
+
+  def comments
   end
 end

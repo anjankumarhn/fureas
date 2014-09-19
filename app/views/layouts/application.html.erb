@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:fb='http://www.facebook.com/2008/fbml'>
 <head>
   <title>Fureas</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -9,9 +9,18 @@
 </head>
 <body>
   <%= render :partial => "layouts/header" %>
-  <% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, :id => "flash#{name}" %>
+  <% if (flash[:notice].present? || flash[:alert].present? || flash[:error].present?) %>
+   <div class="banner">
+    <button type="button" class="close modal-close-btn" data-dismiss="modal">
+
+
+                        </button>
+    <strong><%= render :partial => "layouts/flash_messges" %></strong>
+  </div>
+</div>
+  </div>
   <% end %>
+
   <%= yield %>
   <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
     <%= render :partial => "sessions/new" %>
@@ -26,4 +35,5 @@
 
   <%= render :partial => "layouts/footer" %>
 </body>
+
 </html>
