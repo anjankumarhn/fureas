@@ -143,4 +143,22 @@ text-align: center;
 .profile{
   margin-top:100px;
   margin-bottom: 100px;
+  background-color: skyblue;
+  min-height: 500px;
+}
+#user_gender{
+margin-top: 15px;
+margin-bottom: 15px;
+margin-left: -410px;
+}
+.myprofile{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #DCDCDC;
+  padding-top: 50px;
+  padding-left: 100px;
+
+}
+.image-border{
+  border: 5px solid black;
 }

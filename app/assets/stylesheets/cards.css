@@ -2,14 +2,14 @@
     border: 1px solid #d7d7d7;background-color: #ffffff;display: block;position: relative;margin-bottom: 20px;
 }
 .communities-card:hover {
-    -moz-box-shadow:    3px 3px 3px 0 #9ea1a6; -webkit-box-shadow: 3px 3px 3px 0 #9ea1a6; box-shadow: 3px 3px 3px 0 #9ea1a6;  
+    -moz-box-shadow:    3px 3px 3px 0 #9ea1a6; -webkit-box-shadow: 3px 3px 3px 0 #9ea1a6; box-shadow: 3px 3px 3px 0 #9ea1a6;
 }
 .communities-card .header {
     padding: 12px 10px 15px 10px; border-bottom: 1px solid #d7d7d7;  min-height: 100px;
 }
 .communities-card .header .title {
     font-size: 20px; font-family: "Signika"; color: rgb( 86, 93, 103 );font-weight: 600;line-height: 1.15;
-   
+
 }
 .communities-image {
     position: relative;
@@ -56,4 +56,10 @@
 }
 .comunut-block .second-block .month {
     font-size: 15px;font-family: "Signika"; color: rgb( 86, 93, 103 );text-transform: uppercase; line-height: 1;text-align: center;
+}
+.communities-card1 {
+    border: 1px solid #d7d7d7;background-color: #ffffff;display: block;position: relative;margin-bottom: 20px;text-align: center;float: left;
+}
+.communities-card1:hover {
+    -moz-box-shadow:    3px 3px 3px 0 #9ea1a6; -webkit-box-shadow: 3px 3px 3px 0 #9ea1a6; box-shadow: 3px 3px 3px 0 #9ea1a6;
 }

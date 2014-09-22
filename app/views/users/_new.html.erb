@@ -19,7 +19,7 @@
       <label class="error" id="label_error" for="name"> </label>
   <%= f.text_field :email, :id=>"email",:class=>"form-control", :placeholder=>"E-mail"%>
        <label class="error" id="label_error" for="email"> </label>
-       <%= f.select :gender, options_for_select([["Male", "1"], ["Female", "2"]]),  :id=>"gender",:class=>"form-control", :prompt =>"select gender" %>
+       <%= f.select :gender, options_for_select([["Male", "Male"], ["Female", "Female"]]),  :id=>"gender",:class=>"form-select", :prompt =>"select gender" %>
   <%= f.text_field :contact_number, :id=>"contact_number",:class=>"form-control", :placeholder=>"Contact Number"%>
        <label class="error" id="label_error" for="contact_number"> </label>
        <%= f.text_area :address, :id=>"address",:class=>"form-control", :placeholder=>"Address"%>

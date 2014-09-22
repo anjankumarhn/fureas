@@ -23,7 +23,17 @@
       <%= f.text_field :email, :id=>"email",:class=>"form-control", :placeholder=>"E-mail"%>
        <label class="error" id="label_error" for="email"> </label>
 
+         <%= f.select :gender, options_for_select([["Male", "Male"], ["Female", "Female"]]),  :id=>"gender",:class=>"form-select", :prompt =>"select gender" %>
+  <%= f.text_field :contact_number, :id=>"contact_number",:class=>"form-control", :placeholder=>"Contact Number"%>
+       <label class="error" id="label_error" for="contact_number"> </label>
+       <%= f.text_area :address, :id=>"address",:class=>"form-control", :placeholder=>"Address"%>
+       <label class="error" id="label_error" for="address"> </label>
+       <%= f.text_field :state, :id=>"state",:class=>"form-control", :placeholder=>"State"%>
+       <label class="error" id="label_error" for="state"> </label>
+       <%= f.text_field :country, :id=>"country",:class=>"form-control", :placeholder=>"Country"%>
+       <label class="error" id="label_error" for="country"> </label>
 
+       <%= f.file_field :image, :id=>"image", :placeholder=>" Upload image"%>
 
       <div class="col-6 col-sm-offset-0">
       <%= f.submit "UPDATE DETAILS", :class=>"btn btn-danger" %>

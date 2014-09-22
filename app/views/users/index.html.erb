@@ -13,26 +13,110 @@
 
          <h1 class ="family"> Fureas Family </h1>
          <div class="family-members">
- <div class="row">
 
+<div class="row">
+  <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Tharanath Hanchinal</h4>
+         </div>
+         <img src="/assets/tharanath.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Manjula D.B</h4>
+         </div>
+         <img src="/assets/manjula.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Asharani</h4>
+         </div>
+         <img src="/assets/asharani.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Reshma V.P</h4>
+         </div>
+         <img src="/assets/reshma.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">kumar K.R</h4>
+         </div>
+         <img src="/assets/kumar.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Mahesh D.S</h4>
+         </div>
+         <img src="/assets/mahesh.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Sunil S.H</h4>
+         </div>
+         <img src="/assets/sunil.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Dinesh Shetty</h4>
+         </div>
+         <img src="/assets/dinesh.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Sharth Kumar</h4>
+         </div>
+         <img src="/assets/sharath.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
+     <div class="col-sm-2">
+    <div class="communities-card1">
+      <div class="header">
+        <h4 class="title">Vanditha</h4>
+         </div>
+         <img src="/assets/vanditha.jpg" class="image-style img-circle" />
+         <span class="image-name text-muted">Karnataka</span>
+       </div>
+     </div>
   <% @users.each do |u| %>
-<div class="col-md-3">
-  <div class="image-content">
-  <% if u.image? %>
- <%= image_tag u.image, :class =>"image-style img-circle" %>
- <% else %>
- <img src="assets/overlay.png" class="image-style img-circle" />
- <% end %>
-
-<h4 class="image-name"><%= u.name %></h4>
- <span class="image-name text-muted"><%= u.state %></span>
- <hr>
-
- </div>
-</div>
- <% end %>
-</div>
-
+      <div class="col-sm-2">
+         <a href="/users/<%= u.id %>" class="communities-card1">
+          <div class="header">
+          <h4 class="title"><%= u.name %></h4>
+        </div>
+          <%= image_tag u.image, :class =>"image-style img-circle" %>
+          <span class="image-name text-muted"><%= u.state %></span>
+         </a>
+       </div>
+       <% end %>
+     </div>
 </div>
 </div>
 
