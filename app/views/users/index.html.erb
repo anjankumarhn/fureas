@@ -111,7 +111,11 @@
           <div class="header">
           <h4 class="title"><%= u.name %></h4>
         </div>
+        <% if u.image? %>
           <%= image_tag u.image, :class =>"image-style img-circle" %>
+          <% else %>
+          <img src="/assets/overlay.png" class="image-style img-circle" />
+          <% end %>
           <span class="image-name text-muted"><%= u.state %></span>
          </a>
        </div>

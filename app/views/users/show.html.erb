@@ -3,14 +3,22 @@
   <div class="myprofile">
     <div class="row">
      <div class="col-sm-2">
-      <div class="image-border"><%= image_tag @user.image, :class =>"image-style" %></div>
+      <div class="image-border">
+
+
+        <% if @user.image? %>
+          <%= image_tag @user.image, :class =>"image-style" %>
+          <% else %>
+          <img src="/assets/overlay.png" class="image-style" />
+          <% end %>
+        </div>
 
      </div>
      <div class="col-sm-10">
       <h3 class="profile-name"><strong>Name: <%= @user.name %></strong></h3>
       <h3 class="profile-gender"><strong>Gender: <%= @user.gender %></strong></h3>
       <h3 class="profile-email"><strong>E-mail: <%= @user.email %></strong></h3>
-      <h3 class="profile-number"><strong>Contact Number: <%= @user.contact_number %></strong></h3>
+<h3 class="profile-number"><strong>Contact Number:<%= @user.contact_number %></strong></h3>
      </div>
      <div class="col-sm-12">
        <h3 class="profile-number"><strong>Address: <%= @user.address %></strong></h3>
