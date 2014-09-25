@@ -116,7 +116,11 @@
           <% else %>
           <img src="/assets/overlay.png" class="image-style img-circle" />
           <% end %>
+          <% if u.state? %>
           <span class="image-name text-muted"><%= u.state %></span>
+           <% else %>
+            <span class="image-name text-muted">Nothing</span>
+            <% end %>
          </a>
        </div>
        <% end %>
