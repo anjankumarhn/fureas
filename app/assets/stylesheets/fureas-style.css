@@ -118,8 +118,9 @@
 .modal-body .caption-text {
     color: #484848;font-size: 16px;font-weight: 300;line-height:1.4; padding-bottom: 20px;text-align: center;
 }
+.modal-body .social-sign{ margin-left: 20px;}
 .modal-body .social-names {
-    color: #767676;font-size: 14px;font-weight: 400;line-height:1.4; padding-top: 12px;padding-bottom: 20px;text-align: center;
+    color: #767676;font-size: 14px;font-weight: 400;line-height:1.4; padding-top: 12px;padding-bottom: 20px;text-align: center;margin-left: 10px;
 }
 .modal-body .signingup {
     color: #767676;font-size: 15px;font-weight: 300;line-height:1.4; padding-top: 10px;padding-bottom: 5px;text-align: center;
@@ -155,4 +156,9 @@
 .expanded-events {
     visibility: visible;
     width: 150px;
+}
+.social-github{
+background-position: -389px 0px;
+height: 128px;
+width: 128px;
 }
